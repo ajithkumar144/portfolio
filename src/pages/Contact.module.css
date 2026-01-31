@@ -1,0 +1,120 @@
+.contactSection {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.subHeading {
+    font-size: 24px;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.text {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.infoItem:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-color);
+}
+
+.infoItem img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+    
+}
+
+.infoItem h4 {
+    color: var(--text-primary);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.infoItem p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Form Styles */
+.form {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.5);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    background: var(--bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}

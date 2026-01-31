@@ -1,0 +1,131 @@
+.projectsSection {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    padding: 30px 25px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s ease;
+    cursor: default;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.folderIcon {
+    color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+}
+
+.folderIcon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: var(--text-secondary);
+    width: 22px;
+    height: 22px;
+}
+
+.links a:hover {
+    color: var(--accent-color);
+}
+
+.links a svg {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 22px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.card:hover .title {
+    color: var(--accent-color);
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.techList li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
