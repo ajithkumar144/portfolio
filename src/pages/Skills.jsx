@@ -9,7 +9,6 @@ import reactIcon from '../assets/react.png';
 import bootstrapIcon from '../assets/bootstrap.png';
 import gitIcon from '../assets/git.png';
 import promptIcon from '../assets/Prompt engineering.png';
-import antiGravityIcon from '../assets/anti-gravity.png';
 import canvaIcon from '../assets/canva.png';
 
 
@@ -34,7 +33,7 @@ const skillsData = [
         category: 'AI & Productivity',
         items: [
             { name: 'Prompt Engineering (Basic)',purpose:"For better AI responses", icon: promptIcon },
-            { name: 'Anti-Gravity',purpose:"Using AI agents to automate simple tasks", icon: antiGravityIcon }
+            
         ]
     },
     {

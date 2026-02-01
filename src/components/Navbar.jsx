@@ -53,7 +53,7 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className={styles.navItemButton} style={{ animationDelay: `${navLinks.length * 0.1}s` }}>
-                        <Button variant="primary" href="/hhhhh.pdf" target="_blank">
+                        <Button variant="primary" href="/Ajithkumar Resume.pdf" target="_blank">
                             Download Resume
                         </Button>
                     </li>
