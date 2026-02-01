@@ -8,7 +8,7 @@ import callIcon from '../assets/call.png';
 const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert('This form is for design purposes only. You can contact me directly using the details below.');
+        alert('This form is for design purposes only. contact me on ajith28062002@gmail.com.');
     };
 
     return (
